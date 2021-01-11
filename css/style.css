@@ -1,0 +1,18 @@
+@font-face {  /* importer la font, la définir via font-family et la pointer avec src: url()*/
+	font-family: Raleway, Arial, Verdana;
+	src: url(../fonts/raleway-v18-latin-regular.woff)
+		url(../fonts/raleway-v18-latin-regular.woff2);
+}
+
+
+@media screen and (max-width: 480px) { /*taile smartphone*/
+
+}
+
+@media screen and (max-width: 768px) { /*taille ipad*/
+    
+}
+
+@media screen and (min-width: 769px) { /*taille desktop en min-width et pas max-width*/
+    
+}
