@@ -21,7 +21,7 @@
             <a class="link-sign" href="inscrire">S'inscrire</a>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="recherche"> <!--Section dédiée recherche avec un header, un form, les filtres et un paragraph info-->
             <header class="recherche-header"> <!--h1 et p-->
                 <h1 id="recherche-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -58,8 +58,8 @@
         </section>
         <section class="hosting"> <!--Section hébergement dans la ville + les plus populaires-->
             <div class="hebergement"> <!--div avec un header et 6 articles en grid + un lien afficher plus-->
-                <header> <!--header hosting avec h2 dedans-->
-                    <h2 id="header-hosting">Hébergement à Marseille</h2>
+                <header id="header-hosting"> <!--header hosting avec h2 dedans-->
+                    <h2>Hébergement à Marseille</h2>
                 </header>
                 <article class="hosting-vignette"> <!--article car tout reste ensemble et ça pourrait être indivisible-->
                     <a href="#"> <!--tout dans un a car toute la vignette est clickable-->
@@ -159,7 +159,25 @@
                 </article>
             </div>
             <aside class="populaires">
-
+                <header id="header-hosting"> <!--header hosting avec h2 dedans-->
+                    <h2>Hébergement à Marseille</h2>
+                </header>
+                <article class="hosting-vignette"> <!--article car tout reste ensemble et ça pourrait être indivisible-->
+                    <a href="#"> <!--tout dans un a car toute la vignette est clickable-->
+                        <figure class="vignette-hebergement"> <!--figure car image + caption-->
+                            <img class="vignette-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image Auberge la Cannebière">
+                            <figcaption class="vignette-caption">Auberge la Cannebière</figcaption>
+                        </figure>
+                        <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">25€</strong></p> <!--p pour texte nuit et prix en strong-->
+                        <div class="vignette-star"> <!--div car etoile bleu ou etoile grise donc 2 classe pour les icon et 5 icon par div-->
+                            <i class="star fas fa-star"></i>
+                            <i class="star fas fa-star"></i>
+                            <i class="star fas fa-star"></i>
+                            <i class="star fas fa-star"></i>
+                            <i class="star fas fa-star"></i>
+                        </div>
+                    </a>
+                </article>
             </aside>
         </section>
     </main>
