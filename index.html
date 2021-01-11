@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservia - Trouvez votre hébergement pour des vacances de rêve.</title>
+  <meta name="description" content="Reservia - Trouvez votre hébergement pour des vacances de rêve.">
+  <meta name="author" content="Thomas Baque">
+  <link rel="icon" href="images/logo/Reservia.svg"> <!--Pas de favicon dans les ressources, j'ai utilisé le logo en .svg-->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script src="https://kit.fontawesome.com/4f929c4a6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo/Reservia@3x.png" alt="Logo Reservia">
+        <nav>
+            <a class="link" href="#activites">Activités</a>
+            <a class="link" href="#hosting">Hébergements</a>
+            <a class="link-sign" href="inscrire">S'inscrire</a>
+        </nav>
+    </header>
+    <main>
+        <section class="recherche"> <!--Section dédiée recherche avec un header, un form, les filtres et un paragraph info-->
+            <header class="recherche-header"> <!--h1 et p-->
+                <h1 id="recherche-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p id="recherche-p">En plein centre ville ou en pleine nature</p>
+            </header>
+            <form class="form-ville" action="" method="POST"> <!--form type icon(label)/form avec placeholder(input)/submit(input)-->
+                <label for="ville"><i id="map-icon" class="fas fa-map-marker-alt"></i></label> <!--"for" correspond à "name" dans input plus bas-->
+                <input class="form" name="ville" type="text" placeholder="Marseille, France">
+                <input class="form-submit" type="submit" value="Rechercher">
+            </form>
+            <div class="filters"> <!--h2 filtres avec 4 'boutons' (dans 1 div chacun) type icon dans un nouveau div car multiple / span car element inline avec le texte du filtre-->
+                <h2 id="filters-h2">Filtres</h2>
+                <div class="filter">
+                    <div class="filter-icon"><i id="button-icon" class="fas fa-money-bill-wave"></i></div>
+                    <span class="filter-text">Économique</span>
+                </div>
+                <div class="filter">
+                    <div class="filter-icon"><i id="button-icon" class="fas fa-child"></i></div>
+                    <span class="filter-text">Familial</span>
+                </div>
+                <div class="filter">
+                    <div class="filter-icon"><i id="button-icon" class="fas fa-heart"></i></div>
+                    <span class="filter-text">Romantique</span>
+                </div>
+                <div class="filter">
+                    <div class="filter-icon"><i id="button-icon" class="fas fa-dog"></i></div>
+                    <span class="filter-text">Animaux autorisés</span>
+                </div>                                
+            </div>
+        </section>
+    </main>
+</body>
