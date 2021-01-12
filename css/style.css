@@ -55,6 +55,10 @@ a:visited {
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 1rem;
+	max-width: 1440px;
+	margin: auto;
+	padding: 0rem 1.5rem;
+	box-sizing: border-box;
   }
 #header-logo {
 	width: auto;
@@ -175,10 +179,10 @@ a.link:hover {
 	column-gap: 2rem;
 	background-color: #F2F2F2;
 	border-radius: 2rem;
-	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	row-gap: 2rem;
 	padding: 2rem;
+	height: 40rem;
 }
 
 .vignette-img {
@@ -193,7 +197,7 @@ a.link:hover {
 	padding: 0.5rem;
 	border-radius: 1rem;
 	cursor: pointer;
-	height: 100%;
+	height: 14rem;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 25px grey;
 }
@@ -241,4 +245,52 @@ a.link:hover {
 	max-height: 100%;
 	object-fit: cover;
 	border-radius: 1rem;
+}
+/*ACTIVITES*/
+.activites {
+	display: grid;
+	column-gap: 2rem;
+	row-gap: 2rem;
+	grid-template-columns: repeat(2, 2fr);
+}
+
+#title-activites {
+	grid-column: 1/-1;
+}
+.activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
+	background-color: white;
+	border-radius: 1rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 25px grey;
+}
+.activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover {
+transform: scale(1.05);
+}
+.activites-img {
+	height: 100%;
+	width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+.activites-caption {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 1rem;
+	font-weight: bold;
+}
+
+/*FOOTER*/
+.footer {
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 5rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.about, .footer-hosting, .help {
+	padding-right: 20rem;
+	padding-left: 5rem;
+	line-height: 0rem;
 }
