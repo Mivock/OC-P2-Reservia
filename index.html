@@ -13,6 +13,9 @@
 </head>
 
 <body>
+
+<!--HEADER-->
+
     <header class="header">
         <img id="header-logo" src="images/logo/Reservia@3x.png" alt="Logo Reservia">
         <nav>
@@ -56,7 +59,10 @@
                 <p id="filter-footer-p">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <section class="hosting"> <!--Section hébergement dans la ville + les plus populaires-->
+
+<!--HOSTING-->
+
+        <section class="hosting" id="#hosting"> <!--Section hébergement dans la ville + les plus populaires-->
             <div class="hebergement"> <!--div avec un header et 6 articles en grid + un lien afficher plus-->
                 <header id="header-hosting"> <!--header hosting avec h2 dedans-->
                     <h2>Hébergement à Marseille</h2>
@@ -159,62 +165,68 @@
                 </article>
                 <a id="footer-host" href="#"><h3>Afficher plus</h3></a>
             </div>
+
+<!--POPULAIRES-->
+
             <aside class="populaires">
                 <header id="header-pop"> <!--header hosting avec h2 dedans et icon chart-->
                     <h2>Les plus populaires</h2><i id="icon-chart" class="fas fa-chart-line"></i>
                 </header>
-                <article class="pop-vignette">
-                    <a href="#">
-                        <figure class="vignette-hebergement">
-                            <img class="vignette-img-pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image Hôtel Le soleil du matin">
-                            <figcaption class="vignette-caption">Hôtel Le soleil du matin</figcaption>
-                        </figure>
-                        <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">128€</strong></p>
-                        <div class="vignette-star">
+                <article class="article-pop">
+                    <a class="pop-vignette">
+                        <img class="vignette-img-pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image Hôtel Le soleil du matin">
+                        <div class="vignette-pop-caption">
+                            <h3 class="vignette-h3">Hôtel Le soleil du matin</h3>
+                            <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">128€</strong></p>
+                            <div class="vignette-star">
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
+                            </div>
                         </div>
                     </a>
                 </article>
-                <article class="pop-vignette">
-                    <a href="#">
-                        <figure class="vignette-hebergement">
-                            <img class="vignette-img-pop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image Au coeur de l'eau Chambres d'hôtes">
-                            <figcaption class="vignette-caption">Au coeur de l'eau Chambres d'hôtes</figcaption>
-                        </figure>
-                        <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">71€</strong></p>
-                        <div class="vignette-star">
+                <article class="article-pop">
+                    <a class="pop-vignette" href="#">
+                        <img class="vignette-img-pop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image Au coeur de l'eau Chambres d'hôtes">
+                        <div class="vignette-pop-caption"> 
+                            <h3 class="vignette-h3">Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">71€</strong></p>
+                            <div class="vignette-star">
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="disabled-star star fas fa-star"></i>
                         </div>
+                    </div> 
                     </a>
                 </article>
-                <article class="pop-vignette">
-                    <a href="#">
-                        <figure class="vignette-hebergement">
-                            <img class="vignette-img-pop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image Hôtel Tout bleu et Blanc">
-                            <figcaption class="vignette-caption">Hôtel Tout bleu et Blanc</figcaption>
-                        </figure>
-                        <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">68€</strong></p>
-                        <div class="vignette-star">
+                <article class="article-pop">
+                    <a class="pop-vignette" href="#">
+                        <img class="vignette-img-pop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image Hôtel Tout bleu et Blanc">
+                        <div class="vignette-pop-caption"> 
+                            <h3 class="vignette-h3">Hôtel Tout bleu et Blanc</h3>
+                            <p class="vignette-nuit">Nuit à partir de <strong class="vignette-prix">68€</strong></p>
+                            <div class="vignette-star">
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="active-star star fas fa-star"></i>
                             <i class="disabled-star star fas fa-star"></i>
                         </div>
+                    </div> 
                     </a>
                 </article>
 
             </aside>
         </section>
-        <section class="activites">
+
+<!--ACTIVITES-->
+
+        <section class="activites" id="activites">
             <h2 id="title-activites">Activités à Marseille</h2>
             <a class="activite1" href="#">
                 <figure>
@@ -254,6 +266,9 @@
             </a>
         </section>
     </main>
+
+<!--FOOTER-->
+
     <footer class="footer">
         <div class="about">
             <a class="link-footer" href="#"><h3>A propos</h3></a><br>
