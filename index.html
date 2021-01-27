@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <script src="https://kit.fontawesome.com/4f929c4a6e.js" crossorigin="anonymous"></script> <!--js placé en premier-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thomas Baque">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <script src="https://kit.fontawesome.com/4f929c4a6e.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logo/Reservia.svg">
     <title>Reservia - Trouvez votre hébergement pour des vacances de rêve.</title>
 </head>
@@ -15,13 +15,13 @@
         <div class="logo">
             <a href="/index.html"><img src="img/logo/Reservia.svg" alt="Logo du site Reservia"></a>
         </div>
-        <div class="navbar">
+        <nav class="navbar">
             <ul class="links">
                 <li><a href="#hosting">Hébergements</a></li>
                 <li><a href="#activities">Activités</a></li>
             </ul>
             <a class="signup" href="#">S'inscrire</a>
-        </div>
+        </nav>
     </header>
     <!--MAIN-->
     <main class="main">
@@ -35,7 +35,7 @@
             <div class="headForm">
                 <form action="" class="form">
                     <label for="ville"><i id="formMapIcon" class="fas fa-map-marker-alt"></i></label> <!--"for" correspond à "name" dans input plus bas-->
-                    <input class="formInput" name="ville" type="text" placeholder="Marseille, France">
+                    <input id="ville" class="formInput" name="ville" type="text" placeholder="Marseille, France">
                     <input class="formSubmit" type="submit" value="Rechercher">
                 </form>
             </div>
@@ -45,19 +45,19 @@
                 <div class="buttonWrapper">
                     <div class="button">
                         <i class="buttonIcon fas fa-money-bill-wave"></i>
-                        <h3 class="buttonText">Économique</h3>
+                        <span class="buttonText">Économique</span>
                     </div>
                     <div class="button">
                         <i class="buttonIcon fas fa-child"></i>
-                        <h3 class="buttonText">Familial</h3>
+                        <span class="buttonText">Familial</span>
                     </div>
                     <div class="button">
                         <i class="buttonIcon fas fa-heart"></i>
-                        <h3 class="buttonText">Romantique</h3>
+                        <span class="buttonText">Romantique</span>
                     </div>
                     <div class="button">
                         <i class="buttonIcon fas fa-dog"></i>
-                        <h3 class="buttonText">Animaux autorisés</h3>
+                        <span class="buttonText">Animaux autorisés</span>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
         <!--SEARCH RESULTS-->
         <section class="searchResults">
             <!--HOSTING/POPULAR-->
-            <article class="hosting">
+            <div class="hosting">
                 <h2 class="hostingCityName">Hébergements à Marseille</h2>
                 <div class="hostingCard">
                     <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="hostingImg">
@@ -157,7 +157,7 @@
                     </div>
                 </div>
                 <h3 class="hostingShowMore">Afficher plus</h3>
-            </article>
+            </div>
             <!--POPULAR-->
             <aside class="popular">
                 <div class="popularHead">
