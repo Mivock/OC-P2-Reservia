@@ -11,18 +11,8 @@ body {
 
 /*HEADER*/
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 60px;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-}
 .links {
     list-style-type: none;
-    display: flex;
 }
 a {
     color: initial;
@@ -37,10 +27,11 @@ a {
     font-weight: 900;
     color: #0065FC;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) { /*taille desktop*/
     body {
         min-width: auto;
-        max-width: ;
+        max-width: 2000px; /*quelle taille en max-width?*/
+        margin: auto;
         height: 100%;
     }
     main {
@@ -48,21 +39,61 @@ a {
         font-size: 16px;
     }
     .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
         padding-top: 40px
     }
     .logo img {
         height: 50px;
         width: auto;
     }
+    .links {
+        display: flex;
+    }
     .links a:hover {
         border-top: 3px solid #0065FC;
         padding-top: 56px; /*54px car padding-top header 40px et font-size 14px*/
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
     }
     .navbar a {
         padding: 0 40px
     }
 }
 
+@media only screen and (max-width: 425px) { /*IPHONE 8*/
+    body {
+        min-width: 1vw;
+        max-width: 425px;
+        margin: 0;
+        height: auto;
+    }
+    .header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .signup {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .links {
+        grid-row: 2/3;
+        grid-column: -3/-1;
+        width: 100%;
+    }
+
+}
 
 /*MAIN*/
 
@@ -71,7 +102,7 @@ a {
 .findHosting {
     font-weight: bold;
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 769px) {
     .head {
         padding-top: 20px
     }
@@ -107,6 +138,7 @@ a {
     border: transparent;
     border-radius: 0 20px 20px 0;
 }
+
 
 /*PLACEHOLDER FIX*/
 ::-webkit-input-placeholder {
@@ -452,22 +484,22 @@ a {
 
 
 .activityCardOne:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .activityCTUp:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .activityCTDown:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .activityCardThree:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .activityCFUp:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .activityCFDown:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .activityName {
