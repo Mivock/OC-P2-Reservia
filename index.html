@@ -15,6 +15,9 @@
         <div class="logo">
             <a href="/index.html"><img src="img/logo/Reservia.svg" alt="Logo du site Reservia"></a>
         </div>
+        <a id="signupSmallerDisplays" href="#">S'inscrire</a>
+        <a id="hostingSmallerDisplays" href="#hosting">Hébergements</a>
+        <a id="activitiesSmallerDisplays" href="#activities">Activités</a>
         <nav class="navbar">
             <ul class="links">
                 <li><a href="#hosting">Hébergements</a></li>
@@ -37,6 +40,10 @@
                     <label for="ville"><i id="formMapIcon" class="fas fa-map-marker-alt"></i></label> <!--"for" correspond à "name" dans input plus bas-->
                     <input id="ville" class="formInput" name="ville" type="text" placeholder="Marseille, France">
                     <input class="formSubmit" type="submit" value="Rechercher">
+                    <button class="formSubmitIcon" type="submit" id="completed-task">
+                        <i class="fas fa-search"></i>
+                  </button>
+                    
                 </form>
             </div>
             <!--FILTERS-->
@@ -70,7 +77,7 @@
         <!--SEARCH RESULTS-->
         <section class="searchResults">
             <!--HOSTING/POPULAR-->
-            <div class="hosting">
+            <div class="hosting" name="hosting">
                 <h2 class="hostingCityName">Hébergements à Marseille</h2>
                 <div class="hostingCard">
                     <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="hostingImg">
@@ -159,7 +166,7 @@
                 <h3 class="hostingShowMore">Afficher plus</h3>
             </div>
             <!--POPULAR-->
-            <aside class="popular">
+            <aside class="popular" name="popular">
                 <div class="popularHead">
                     <h1 class="popularTitle">Les plus populaires</h1>
                     <i class="popularChartIcon fas fa-chart-line"></i>
@@ -215,7 +222,7 @@
             </aside>
         </section>
         <!--ACTIVITIES-->
-        <section class="activities">
+        <section class="activities" name="activities">
             <h1 class="activitiesTitle">Activités à Marseille</h1>
             <article class="activityWrapper">
                 <div class="activityCardOne">
