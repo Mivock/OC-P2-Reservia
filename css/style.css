@@ -606,7 +606,7 @@ a {
     /*ACTIVITIES*/
 
     .activitiesTitle {
-        width: 100%;
+        width: auto;
         padding: 10px 0 15px 20px;
     }
     .activityWrapper {
