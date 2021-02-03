@@ -486,10 +486,10 @@ a {
 
 
 
-/*CSS iPhone display*/
-@media only screen and (max-width: 425px) {	
+/*CSS iPhone + iPad portrait display*/
+@media only screen and (max-width: 768px) {	
 	body {
-        max-width: 425px;
+        max-width: 768px;
         margin: 0;
         padding: 0;
         height: 100%;
@@ -570,7 +570,7 @@ a {
 		padding: 0 20px;
 	}
 	.findHosting {
-		width: 90%;
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -705,6 +705,8 @@ a {
         flex-wrap: wrap;
         margin-bottom: 10px;
         max-width: 80%;
+        font-size: 16px;
+        font-weight: 800;
     }
     .popularPrice {
         margin-top: 0
@@ -726,18 +728,17 @@ a {
     }
     .hostingCityName {
 		max-width: 100%;
-        padding-left: 20px;
     }
     .hostingCard {
 		width: 100%;
-        height: 210px;
+        height: 200px;
         border-radius: 25px;
 		box-shadow: 0px 0px 25px rgb(160, 156, 156);
 		border: 5px solid white;
 		margin: 0 -5px;
         display: grid;
         grid-template-columns: 1fr;
-		grid-template-rows: 1fr 0.8fr;
+		grid-template-rows: 1fr 0.7fr;
     }
     .hostingCard:hover {
         transform: scale(1.1);
@@ -750,8 +751,8 @@ a {
     }
     .hostingCardInfo {
         width: 100%;
-        max-height: 90px;
-        padding-left: 20px;
+        height: 100%;
+        padding: 5px 0 0 15px;
 		display: flex;
         flex-direction: column;
     }
@@ -777,50 +778,53 @@ a {
     }
 	/*ACTIVITIES*/
 	.activities {
-		width: 100%;
+        width: 100%;
+        margin: 40px 0;
 	}
     .activitiesTitle {
-        max-width: 70%;
+        max-width: 80%;
         padding: 0 0 15px 20px;
     }
     .activityWrapper {
         max-width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 420px 200px 420px;
+        grid-template-rows: 210px 440px 210px 440px;
 		row-gap: 20px;
 		padding: 0 20px;
     }
     .activityCardOne {
 		min-width: 100%;
-        height: 200px;
+        height: 210px;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
         cursor: pointer;
     }
     .activityCardTwo {
+        padding-bottom: 20px;
 		min-width: 100%;
         display: grid;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 210px 210px;
         row-gap: 20px;
     }
     .activityCTUp {
 		min-width: 100%;
-        height: 200px;
+        height: 210px;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
         cursor: pointer;
     }
     .activityCTDown {
 		min-width: 100%;
-        height: 200px;
+        height: 210px;
+        margin-bottom: 20px;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
         cursor: pointer;
     }
     .activityCardThree {
 		min-width: 100%;
-        height: 200px;
+        height: 210px;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
         cursor: pointer;
@@ -828,19 +832,19 @@ a {
     .activityCardFour {
 		min-width: 100%;
         display: grid;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 210px 210px;
         row-gap: 20px;
     }
     .activityCFUp {
 		min-width: 100%;
-        height: 200px;
+        height: 210px;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
         cursor: pointer;
     }
     .activityCFDown {
 		min-width: 100%;
-        height: 200px;
+        height: 210px;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
         cursor: pointer;
@@ -878,12 +882,13 @@ a {
     }
 /*ACTIVITY INFO CARD*/
     .activityName {
-		min-width: 70%;
-        height: 40px;
+        min-width: 70%;
+        margin: 0;
+        height: 50px;
         padding-left: 25px;
         font-size: 14px;
-        font-weight: bold;
-		margin: 8px 0 0 0;
+        font-weight: 800;
+        padding-top: 13px;
 	}
 
 /*FOOTER*/
@@ -896,6 +901,6 @@ a {
         grid-template-rows: repeat(3,auto);
 	}
 	.footerAbout, .footerHosting, .footerSupport {
-		padding-left: 30px;
+		padding: 0 0 10px 30px;
 	}
 }
