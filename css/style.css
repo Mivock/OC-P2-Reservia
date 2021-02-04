@@ -11,15 +11,20 @@ body {
     list-style-type: none;
 }
 a {
-    color: #0065FC;
+    color: initial;
+    text-decoration: none;
 }
 .links a:visited {
-    color: #0065FC;
+    color: initial;
 }
-.navbar a {
+#hostingLink:hover, #activitiesLink:hover {
     text-decoration: none;
     font-weight: 600;
     color: #0065FC
+}
+.signup {
+    font-weight: 800;
+    color: #0065FC;
 }
 /*MAIN*/
 
@@ -48,6 +53,10 @@ a {
     width: 18%;
     border: 1px solid #F2F2F2;
 }
+.formInput[type="text"] {
+    padding-left: 30px;
+    font-size: 18px;
+}
 .formSubmit {
     color: white;
     font-weight: bold;
@@ -56,6 +65,7 @@ a {
     background-color: #0065FC;
     border: transparent;
     border-radius: 0 20px 20px 0;
+    cursor: pointer;
 }
 .formInput::placeholder {
     color:black;
@@ -99,11 +109,9 @@ a {
 .currency {
     font-weight: bold;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
     body {
-        min-width: auto;
-        max-width: 2000px; /*quelle taille en max-width?*/
-        margin: auto;
+        width: 100%;
         height: 100%;
     }
     main {
@@ -325,133 +333,126 @@ a {
         height: 90%;
         position: relative;
     }
+    /*HOVER ACTIVITY CARD*/
+    .activityCardOne:hover {
+        transform: scale(1.05);
+    }
+    .activityCTUp:hover {
+        transform: scale(1.05);
+    }
+    .activityCTDown:hover {
+        transform: scale(1.05);
+    }
+    .activityCardThree:hover {
+        transform: scale(1.05);
+    }
+    .activityCFUp:hover {
+        transform: scale(1.05);
+    }
+    .activityCFDown:hover {
+        transform: scale(1.05);
+    }
 }
 /*ACTIVITIES*/
-    .activities {
-        width: 100%;
-        height: auto;
-        margin: 70px 0;
-    }
-    .activitiesTitle {
-        width: 100%;
-        padding-bottom: 15px;
-    }
-    .activityWrapper {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr;
-        column-gap: 30px;
-    }
-    .activityCardOne {
-        min-width: 25%;
-        height: 500px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 25px rgb(160, 156, 156);
-        cursor: pointer;
-    }
-    .activityCardTwo {
-        min-width: 25%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr);
-        row-gap: 30px;
-    }
-    .activityCTUp {
-        border-radius: 25px;
-        height: 250px;
-        box-shadow: 0px 0px 25px rgb(160, 156, 156);
-        cursor: pointer;
-    }
-    .activityCTDown {
-        border-radius: 25px;
-        height: 220px;
-        box-shadow: 0px 0px 25px rgb(160, 156, 156);
-        cursor: pointer;
-    }
-    .activityCardThree {
-        min-width: 25%;
-        height: 500px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 25px rgb(160, 156, 156);
-        cursor: pointer;
-    }
-    .activityCardFour {
-        min-width: 25%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr);
-        row-gap: 30px;
-    }
-    .activityCFUp {
-        border-radius: 25px;
-        height: 220px;
-        box-shadow: 0px 0px 25px rgb(160, 156, 156);
-        cursor: pointer;
-    }
-    .activityCFDown {
-        border-radius: 25px;
-        height: 250px;
-        box-shadow: 0px 0px 25px rgb(160, 156, 156);
-        cursor: pointer;
-    }
-    .activityImgTall {
-        height: 90%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-    }
-    .activityImgCTUp {
-        height: 80%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-    }
-    .activityImgCTDown {
-        height: 80%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-    }
-    .activityImgCFUp {
-        height: 78%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-    }
-    .activityImgCFDown {
-        height: 80%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-    }
-
-
-
-
-
-
-
-.activityCardOne:hover {
-    transform: scale(1.05);
+.activities {
+    width: 100%;
+    height: auto;
+    margin: 70px 0;
 }
-.activityCTUp:hover {
-    transform: scale(1.05);
+.activitiesTitle {
+    width: 100%;
+    padding-bottom: 15px;
 }
-.activityCTDown:hover {
-    transform: scale(1.05);
+.activityWrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
 }
-.activityCardThree:hover {
-    transform: scale(1.05);
+.activityCardOne {
+    min-width: 25%;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgb(160, 156, 156);
+    cursor: pointer;
 }
-.activityCFUp:hover {
-    transform: scale(1.05);
+.activityCardTwo {
+    min-width: 25%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 30px;
 }
-.activityCFDown:hover {
-    transform: scale(1.05);
+.activityCTUp {
+    border-radius: 25px;
+    height: 250px;
+    box-shadow: 0px 0px 25px rgb(160, 156, 156);
+    cursor: pointer;
 }
-
+.activityCTDown {
+    border-radius: 25px;
+    height: 220px;
+    box-shadow: 0px 0px 25px rgb(160, 156, 156);
+    cursor: pointer;
+}
+.activityCardThree {
+    min-width: 25%;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgb(160, 156, 156);
+    cursor: pointer;
+}
+.activityCardFour {
+    min-width: 25%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 30px;
+}
+.activityCFUp {
+    border-radius: 25px;
+    height: 220px;
+    box-shadow: 0px 0px 25px rgb(160, 156, 156);
+    cursor: pointer;
+}
+.activityCFDown {
+    border-radius: 25px;
+    height: 250px;
+    box-shadow: 0px 0px 25px rgb(160, 156, 156);
+    cursor: pointer;
+}
+.activityImgTall {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.activityImgCTUp {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.activityImgCTDown {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.activityImgCFUp {
+    height: 78%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.activityImgCFDown {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
 .activityName {
     display: flex;
     align-content: center;
@@ -462,7 +463,6 @@ a {
     font-size: 16px;
     font-weight: bold;
 }
-
 /*FOOTER*/
 .footer a {
     text-decoration: none;
@@ -482,10 +482,9 @@ a {
 
 
 /*CSS iPhone + iPad portrait display*/
-@media only screen and (max-width: 768px) {	
+@media only screen and (max-width: 1024px) {	
 	body {
-        max-width: 768px;
-        margin: 0;
+        max-width: 1024px;
         padding: 0;
         height: 100%;
     }
@@ -682,9 +681,7 @@ a {
         grid-template-rows: 1fr;
         column-gap: 25px;
     }
-    .popularCard:hover {
-        transform: scale(1.1);
-    }
+    /*PAS DE HOVER CAR INUTILE SUR MOBILE / TABLETTE*/
     .popularImg {
         object-fit: cover;
         width: 100%;
@@ -736,9 +733,6 @@ a {
         display: grid;
         grid-template-columns: 1fr;
 		grid-template-rows: 1fr 0.7fr;
-    }
-    .hostingCard:hover {
-        transform: scale(1.1);
     }
     .hostingImg {
 		object-fit: cover;
@@ -903,7 +897,7 @@ a {
 }
 
 /*CSS iPad specific*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
 /*HEADER*/
     .header {
         position: relative;
