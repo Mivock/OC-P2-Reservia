@@ -360,12 +360,13 @@ a {
     .hostingCard {
         width: 90%;
         height: 200px;
-        background-color: white;
+        background-color: #fffffffd;
         display: grid;
         grid-template-columns: 1fr;
 		grid-template-rows: 1fr 0.7fr;
         cursor: pointer;
         padding: 5px;
+        border: 0px solid transparent;
         border-radius: 25px;
         box-shadow: 0px 0px 25px rgb(160, 156, 156);
     }
@@ -444,12 +445,20 @@ a {
     .popularCardInfoWrapper {
         display: flex;
         flex-direction: column;
+        height: 90%;
+        width: 70%;
+        position: relative;
+        padding-left: 10px;
+    }
+    .popularCardInfo {
+        width: 100%;
     }
     .popularName {
         display: flex;
         flex-wrap: wrap;
         margin: 0;
-        width: 80%;
+        width: 90%;
+        font-size: 18px;
     }
     .popularPrice {
         display: flex;
@@ -460,10 +469,7 @@ a {
         position: absolute;
         bottom: 0;
     }
-    .popularCardInfoWrapper {
-        height: 90%;
-        position: relative;
-    }
+
     /*HOVER ACTIVITY CARD*/
     .activityCardOne:hover {
         transform: scale(1.05);
@@ -984,7 +990,7 @@ a {
 	}
 	.buttonIcon {
 		font-size: 20px;
-		border: #DEEBFF;
+        border-color: transparent;
 		border-radius: 50%;
 		padding: 18px; 
 		background-color: #DEEBFF;   
