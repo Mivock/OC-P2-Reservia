@@ -13,12 +13,12 @@
     <!--HEADER-->
     <header class="header">
         <div class="logo">
-            <a href="/index.html"><img src="img/logo/Reservia.svg" alt="Logo du site Reservia"></a>
+            <a href="index.html"><img src="img/logo/Reservia.svg" alt="Logo du site Reservia"></a>
         </div>
-        <a id="signupSmallerDisplays" href="#">S'inscrire</a>
+        <a id="signupSmallerDisplays" href="#">S'inscrire</a> <!--liens pour mobile et ipad en display: none sur desktop-->
         <a id="hostingSmallerDisplays" href="#hosting">Hébergement</a>
         <a id="activitiesSmallerDisplays" href="#activities">Activités</a>
-        <nav class="navbar">
+        <nav class="navbar"> <!--liens pour desktop en display: none pour mobile et ipad-->
             <ul class="links">
                 <li><a href="#hosting" id="hostingLink" >Hébergement</a></li>
                 <li><a href="#activities" id="activitiesLink" >Activités</a></li>
@@ -37,13 +37,12 @@
             <!--FORM-->
             <div class="headForm">
                 <form action="#" class="form">
-                    <label for="ville"><i id="formMapIcon" class="fas fa-map-marker-alt"></i></label> <!--"for" correspond à "name" dans input plus bas-->
-                    <input id="ville" class="formInput" name="ville" type="text" placeholder="Marseille, France">
+                    <label for="ville"><i id="formMapIcon" class="fas fa-map-marker-alt"></i></label>
+                    <input id="ville" class="formInput" name="ville" type="text" placeholder="Marseille, France"> <!--CSS spécifique pour le placeholder-->
                     <input class="formSubmit" type="submit" value="Rechercher">
                     <button class="formSubmitIcon" type="submit" id="completed-task">
                         <i class="fas fa-search"></i>
-                  </button>
-                    
+                    </button>
                 </form>
             </div>
             <!--FILTERS-->
@@ -81,11 +80,11 @@
                 <h2 class="hostingCityName">Hébergement à Marseille</h2>
                 <a href="#">
                     <div class="hostingCard">
-                        <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="hostingImg">
+                        <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="hostingImg"> <!--images small car la résolution suffit dans mon prototype, et plus légères au chargement-->
                         <div class="hostingCardInfo">
                             <h3 class="hostingName">Auberge la Cannebière</h3>
                             <p class="hostingPrice">Nuit à partir de <strong>25</strong><span class="currency">€</span></p>
-                            <div class="hostingRating">
+                            <div class="hostingRating"> <!--complexité pour les étoiles, création d'une classe qui sera normale et une autre grise au CSS-->
                                 <i class="hostingStar fas fa-star"></i>
                                 <i class="hostingStar fas fa-star"></i>
                                 <i class="hostingStar fas fa-star"></i>
@@ -185,7 +184,7 @@
                 </div>
                 <a href="#">
                     <div class="popularCard">
-                        <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="popularImg">
+                        <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="popularImg"> <!--pareil que le choix d'images pour hosting-->
                         <div class="popularCardInfoWrapper">    
                             <div class="popularCardInfo">
                                 <h3 class="popularName">Hôtel Le soleil du matin</h3>
@@ -245,20 +244,20 @@
             <article class="activityWrapper">
                 <a href="#">
                     <div class="activityCardOne">
-                        <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="activityImgTall">
+                        <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="activityImgTall"> <!--images medium car sur ipad et eventuellement iphone la résolution small n'est pas d'assez bonne qualité-->
                         <h3 class="activityName">Vieux Port</h3>
                     </div>
                 </a>
-                <div class="activityCardTwo">
+                <div class="activityCardTwo"> <!--difficulté de placement, je préfère créer un container pour ces deux images afin de les exploiter plus simplement en CSS avec grid-->
                     <a href="#">
                         <div class="activityCTUp">
-                            <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="activityImgCTUp">
+                            <img src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="activityImgCTUp">
                             <h3 class="activityName">Fort de Pomègues</h3>
                         </div>
                     </a>
                     <a href="#">
                         <div class="activityCTDown">
-                            <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="activityImgCTDown">
+                            <img src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="activityImgCTDown">
                             <h3 class="activityName">Îles du Frioul</h3>
                         </div>
                     </a>
@@ -272,13 +271,13 @@
                 <div class="activityCardFour">
                     <a href="#">
                         <div class="activityCFUp">
-                            <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="activityImgCFUp">
+                            <img src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="activityImgCFUp">
                             <h3 class="activityName">Notre-Dame-de-la-Garde</h3>
                         </div>
                     </a>
                     <a href="#">
                         <div class="activityCFDown">
-                            <img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class="activityImgCFDown">
+                            <img src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class="activityImgCFDown">
                             <h3 class="activityName">Parc Longchamp</h3>
                         </div>
                     </a>
@@ -289,7 +288,9 @@
             <!--FOOTER-->
          <footer class="footer">
             <div class="footerAbout">
-                <h3 class="footerAboutTitle">A propos</h3>
+                <a href="#">
+                    <h3 class="footerAboutTitle">A propos</h3>
+                </a>
                 <div class="footerAboutContent">
                     <a href="#" class="footerLink"><p>Fonctionnement du site</p></a>
                     <a href="#" class="footerLink"><p>Conditions générales de vente</p></a>
@@ -297,14 +298,18 @@
                 </div>
             </div>
             <div class="footerHosting">
-                <h3 class="footerHostingTitle">Nos hébergements</h3>
+                <a href="#">
+                    <h3 class="footerHostingTitle">Nos hébergements</h3>
+                </a>
                 <div class="footerContent">
                     <a href="#" class="footerLink"><p>Charte qualité</p></a>
                     <a href="#" class="footerLink"><p>Soumettre votre hôtel</p></a>
                 </div>
             </div>
             <div class="footerSupport">
-                <h3 class="footerSupportTitle">Assistance</h3>
+                <a href="#">
+                    <h3 class="footerSupportTitle">Assistance</h3>
+                </a>
                 <div class="footerContent">
                     <a href="#" class="footerLink"><p>Centre d'aide</p></a>
                     <a href="#" class="footerLink"><p>Nous contacter</p></a>
